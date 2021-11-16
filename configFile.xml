@@ -1,0 +1,16 @@
+<xml>
+	<config>
+		<log4j>DEBUG</log4j>
+		<checkfreq>1000</checkfreq><!--Frequency for task status check. In milliseconds-->
+		<garbagefreq>100</garbagefreq><!--Frequency for garbage collector check. In milliseconds-->
+		<smtpemailport>25</smtpemailport>
+		<smtpemailprotocol>smtp</smtpemailprotocol>
+		<smtpemailserver>X.X.X.X</smtpemailserver>
+		<smtpemail>inal</smtpemail>
+		<smtpemailpassword>******</smtpemailpassword>
+		<smtpemailadmin>a.ratel@spie.com</smtpemailadmin><!--Email which is used to send ack request and report-->
+		<webserverport>8080</webserverport><!--Port used by the internal web server to listen for ack-->
+		<managerserverport>8081</managerserverport><!--Port used by the internal Management server to listen-->
+		<maxtasktime>1300</maxtasktime><!--Max task time before automatic delete. 1440 minute = 1 day-->
+	</config>
+</xml>

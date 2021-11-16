@@ -1,0 +1,42 @@
+<xml>
+	<tasks>
+		<task>
+			<type>usersync</type>
+			<when>CONTINUOUS</when>
+			<description>user data synchronization</description>
+			<timeout>15</timeout>
+			<scandepth>udp,phone,analog</scandepth>
+			<smartlinesearch>true</smartlinesearch>
+			<smartlinesearchpattern>XXXXXX</smartlinesearchpattern>
+			<linesearchpattern>811%</linesearchpattern>
+			<getmorethanprimaryline>false</getmorethanprimaryline>
+			<ackmode>manual</ackmode>
+			<csvreport>true</csvreport>
+			<csvseparator>;</csvseparator>
+			<testmode>false</testmode>
+			<axlversion>8</axlversion>
+			<axlhost>10.0.1.167</axlhost>
+			<axlport>8443</axlport>
+			<axlusername>AXLUser</axlusername>
+			<axlpassword>CCMCisco92</axlpassword>
+			<devicedescription>*M*cucm.nom+' '+*1M*cucm.prenom+' - '+*1S/*cucm.dept</devicedescription>
+			<devicedescriptiontoolong>*M*cucm.nom+' '+*1**M*cucm.prenom+'.'+' - '+*1S/*cucm.dept</devicedescriptiontoolong>
+			<linedescription>*M*cucm.nom+' '+*1M*cucm.prenom+' - '+*1S/*cucm.dept</linedescription>
+			<linedescriptiontoolong>*M*cucm.nom+' '+*1**M*cucm.prenom+'.'+' - '+*1S/*cucm.dept</linedescriptiontoolong>
+			<linealertingname>*M*cucm.nom+' '+*1M*cucm.prenom+' - '+*1S/*cucm.dept</linealertingname>
+			<linealertingnametoolong>*M*cucm.nom+' '+*1**M*cucm.prenom+'. - '+*1S/*cucm.dept</linealertingnametoolong>
+			<linedisplay>*M*cucm.nom+' '+*1M*cucm.prenom+' - '+*1S/*cucm.dept</linedisplay>
+			<linedisplaytoolong>*M*cucm.nom+' '+*1**M*cucm.prenom+'. - '+*1S/*cucm.dept</linedisplaytoolong>
+			<linetextlabel>*M*cucm.nom+' '+*1M*cucm.prenom+' - '+*1S/*cucm.dept</linetextlabel>
+			<linetextlabeltoolong>*M*cucm.nom+' '+*1**M*cucm.prenom+'. - '+*1S/*cucm.dept</linetextlabeltoolong>
+			<lineexternalphonenumbermask>''</lineexternalphonenumbermask>
+			<maxnumchar>30</maxnumchar>
+			<replacefrenchchar>true</replacefrenchchar>
+			<displayurlinreport>true</displayurlinreport>
+			<exception>
+				<except>BLOCKED</except>
+				<except>BLOQUE</except>
+			</exception>
+		</task>
+	</tasks>
+</xml>

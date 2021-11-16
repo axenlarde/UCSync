@@ -1,0 +1,43 @@
+<xml>
+	<tasks>
+		<task>
+			<type>usersync</type>
+			<when>CONTINUOUS</when>
+			<description>user data synchronization</description>
+			<timeout>15</timeout>
+			<scandepth>udp,phone,analog</scandepth>
+			<smartlinesearch>true</smartlinesearch>
+			<smartlinesearchpattern>XXXXXX</smartlinesearchpattern>
+			<linesearchpattern>811%</linesearchpattern>
+			<getmorethanprimaryline>false</getmorethanprimaryline>
+			<ackmode>manual</ackmode>
+			<csvreport>true</csvreport>
+			<csvseparator>;</csvseparator>
+			<testmode>false</testmode>
+			<axlversion>8</axlversion>
+			<axlhost>X.X.X.X</axlhost>
+			<axlport>8443</axlport>
+			<axlusername>AXLAlex</axlusername>
+			<axlpassword>*******</axlpassword>
+			<devicedescription></devicedescription>
+			<devicedescriptiontoolong></devicedescriptiontoolong>
+			<linedescription></linedescription>
+			<linedescriptiontoolong></linedescriptiontoolong>
+			<linealertingname>*M*cucm.nom+' '+*1M*cucm.prenom+' - '+*1S/*cucm.dept</linealertingname>
+			<linealertingnametoolong>*M*cucm.nom+' '+*1**M*cucm.prenom+'. - '+*1S/*cucm.dept</linealertingnametoolong>
+			<linedisplay>*M*cucm.nom+' '+*1M*cucm.prenom+' - '+*1S/*cucm.dept</linedisplay>
+			<linedisplaytoolong>*M*cucm.nom+' '+*1**M*cucm.prenom+'. - '+*1S/*cucm.dept</linedisplaytoolong>
+			<linetextlabel>*M*cucm.nom+' '+*1M*cucm.prenom+' - '+*1S/*cucm.dept</linetextlabel>
+			<linetextlabeltoolong>*M*cucm.nom+' '+*1**M*cucm.prenom+'. - '+*1S/*cucm.dept</linetextlabeltoolong>
+			<lineexternalphonenumbermask>''</lineexternalphonenumbermask>
+			<maxnumchar>30</maxnumchar>
+			<replacefrenchchar>true</replacefrenchchar>
+			<displayurlinreport>false</displayurlinreport>
+			<checkfortoolongvalue>true</checkfortoolongvalue>
+			<exception>
+				<except>BLOCKED</except>
+				<except>BLOQUE</except>
+			</exception>
+		</task>
+	</tasks>
+</xml>
